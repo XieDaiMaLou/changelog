@@ -20,11 +20,11 @@ pnpm install commitizen -D
 npx commitizen init cz-conventional-changelog --save-dev --save-exact
 ```
 使用`pnpm`操作步骤如下
-
+1、添加依赖
 ```shell
 pnpm add -D -E cz-conventional-changelog
 ```
-添加下面的配置到`package.json`中
+2、添加下面的配置到`package.json`中
 ```json
   "config": {
     "commitizen": {
@@ -34,7 +34,7 @@ pnpm add -D -E cz-conventional-changelog
 ```
 `--save-exact(-E)`参数的意思是`精确的安装指定版本的模块`，我们会发现`dependencies`字段里模块版本号前面的`^`不见了
 
-- 添加`scripts`命令`
+- 添加`scripts`命令
 ```json
   "scripts": {
     "commit": "cz",
@@ -132,3 +132,59 @@ npx husky add .husky/commit-msg 'npx --no-install commitlint --edit "$1"'
 通过下图看到，现在已经可以识别到不规范的提交
 
 ![error.png](./images/error.png)
+
+## 使用`release-it`自动生成`变更日志`
+
+- 安装`release-it`
+如果是`npm`直接运行`npm init release-it`
+```shell
+npm init release-it
+```
+如果是`pnpm`按照以下步骤
+
+1、下载依赖
+```shell
+pnpm install release-it -D
+```
+2、生成`release-it`配置
+一种方式是手动创建`.release-it.json文件
+或者执行`pnpm create release-it`命令(目前会报错)，但也会生成`.release-it.json`文件
+
+目前项目不需要在`npm`进行发布，因此需要在`.release-it.json`中添加下面的配置，禁用npm发布：
+```json
+{
+  "github": {
+    "release": true
+  },
+  "npm": {
+    "publish": false
+  }
+}
+```
+为了兼容当前的提交信息格式，还需要执行下面的指令安装一个插件：
+
+```shell
+pnpm install @release-it/conventional-changelog -D
+```
+
+我们可以使用`angular`默认的`changelog`生成规范
+- `ignoreRecommendedBump`我们想在自动生成版本的时候，自己来选择生成，可以配置为`true`
+更多配置参考[这里](https://github.com/release-it/conventional-changelog)
+
+```json
+{
+  "github": {
+    "release": true
+  },
+  "npm": {
+    "publish": false
+  },
+  "plugins": {
+    "@release-it/conventional-changelog": {
+      "preset": "angular",
+      "infile": "CHANGELOG.md",
+      "ignoreRecommendedBump": true
+    }
+  }
+}
+```
