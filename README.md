@@ -129,4 +129,6 @@ npx husky add .husky/commit-msg 'npx --no-install commitlint --edit "$1"'
 
 - 检测一下
 
+通过下图看到，现在已经可以识别到不规范的提交
+
 ![error.png](./images/error.png)
