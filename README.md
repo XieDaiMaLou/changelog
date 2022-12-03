@@ -40,3 +40,7 @@ pnpm add -D -E cz-conventional-changelog
     "commit": "cz",
   },
 ```
+- 测试生成`commit`
+```shell
+pnpm run commit
+```
