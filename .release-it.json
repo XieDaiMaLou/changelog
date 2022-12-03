@@ -9,7 +9,8 @@
     "@release-it/conventional-changelog": {
       "preset": "angular",
       "infile": "CHANGELOG.md",
-      "ignoreRecommendedBump": true
+      "ignoreRecommendedBump": true,
+      "strictSemVer": true
     }
   }
 }

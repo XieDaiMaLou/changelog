@@ -168,7 +168,8 @@ pnpm install @release-it/conventional-changelog -D
 ```
 
 我们可以使用`angular`默认的`changelog`生成规范
-- `ignoreRecommendedBump`我们想在自动生成版本的时候，自己来选择生成，可以配置为`true`
+- `ignoreRecommendedBump`：我们想在自动生成版本的时候，自己来选择生成，可以配置为`true`
+- `strictSemVer`：发布的版本号必须是`strict-semver`的版本号
 更多配置参考[这里](https://github.com/release-it/conventional-changelog)
 
 ```json
@@ -183,7 +184,8 @@ pnpm install @release-it/conventional-changelog -D
     "@release-it/conventional-changelog": {
       "preset": "angular",
       "infile": "CHANGELOG.md",
-      "ignoreRecommendedBump": true
+      "ignoreRecommendedBump": true,
+      "strictSemVer": true
     }
   }
 }
