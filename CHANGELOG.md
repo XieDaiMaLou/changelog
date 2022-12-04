@@ -1,5 +1,9 @@
 
 
+## <small>1.0.8 (2022-12-04)</small>
+
+* chore: add conventional-changelog-gitmoji-config ([2809654](https://github.com/XieDaiMaLou/changelog/commit/2809654))
+
 ## <small>1.0.7 (2022-12-04)</small>
 
 * fix: bug fix ([96b83f8](https://github.com/XieDaiMaLou/changelog/commit/96b83f8))
