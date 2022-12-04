@@ -174,7 +174,7 @@ pnpm install @release-it/conventional-changelog -D
 ⚠️(一定要加)：插件会自动生成`tag`，我们需要自定义一下生成`tag`时的提交信息。在配置项中加入下面的配置，来完成提交信息的自定义
 ```json
   "git": {
-    "commitMessage": "release: v${version}"
+    "commitMessage": "chore(tag): release v${version}"
   },
 ```
 
@@ -197,7 +197,7 @@ pnpm install @release-it/conventional-changelog -D
     }
   },
   "git": {
-    "commitMessage": "release: v${version}"
+    "commitMessage": "chore(tag): release v${version}"
   }
 }
 ```
