@@ -2,6 +2,9 @@
   "github": {
     "release": true
   },
+  "git": {
+    "commitMessage": "chore(tag): release v${version}"
+  },
   "npm": {
     "publish": false
   },
@@ -48,8 +51,5 @@
         ]
       }
     }
-  },
-  "git": {
-    "commitMessage": "chore(tag): release v${version}"
   }
 }
