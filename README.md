@@ -215,3 +215,76 @@ release信息：
 `CHANGELOG.md`如下
 
 ![CHANGELOG.md](./images/changelog.png)
+
+### 定制`changelog`
+目前的`changelog`只展示`feat`和`fix`，如果希望展示其它的提交，我们需要定制`changelog`
+
+在`.release-it.json`文件中，我们默认传入的`"preset": "angular"`相当于下面的配置，详情可查看[这里](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.1.0/README.md)
+
+```json
+"preset": {
+  "name": "conventionalcommits",
+  "types": [
+    {"type": "feat", "section": "Features"},
+    {"type": "fix", "section": "Bug Fixes"},
+    {"type": "chore", "hidden": true},
+    {"type": "docs", "hidden": true},
+    {"type": "style", "hidden": true},
+    {"type": "refactor", "hidden": true},
+    {"type": "perf", "hidden": true},
+    {"type": "test", "hidden": true}
+]},
+```
+
+- `type`：提交的`commit`类型，在[Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)中使用
+- `section`：在`changelog`中显示的部分
+- `hidden`：设置为`true`以隐藏`CHANGELOG`中匹配的提交类型。
+
+修改`.release-it.json`配置
+
+```json
+  "plugins": {
+    "@release-it/conventional-changelog": {
+      "infile": "CHANGELOG.md",
+      "ignoreRecommendedBump": true,
+      "strictSemVer": true,
+      "preset": {
+        "name": "conventionalcommits",
+        "types": [
+          {
+            "type": "feat",
+            "section": "✨ 新功能"
+          },
+          {
+            "type": "fix",
+            "section": "🐛 问题修复"
+          },
+          {
+            "type": "chore",
+            "section": "🚀 构建/工程依赖/工具"
+          },
+          {
+            "type": "docs",
+            "section": "📚 文档"
+          },
+          {
+            "type": "style",
+            "section": "💄 代码的样式美化"
+          },
+          {
+            "type": "refactor",
+            "section": "♻️ 重构"
+          },
+          {
+            "type": "perf",
+            "section": "⚡️ 性能优化"
+          },
+          {
+            "type": "test",
+            "section": "✅ 测试"
+          }
+        ]
+      }
+    }
+  }
+```
