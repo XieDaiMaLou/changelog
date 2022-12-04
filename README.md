@@ -123,7 +123,7 @@ npx husky add .husky/commit-msg 'npx --no-install commitlint --edit "$1"'
 ```json
   "scripts": {
     "commit": "cz",
-    "prepare": "husky install",
+    "prepare": "husky install"
   },
 ```
 添加`"prepare": "husky install"`来确保每个使用的人在使用项目前都会激活`husky`钩子。
