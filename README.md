@@ -184,6 +184,8 @@ pnpm install @release-it/conventional-changelog -D
 
 更多配置参考[这里](https://github.com/release-it/conventional-changelog)
 
+最终的`.release-it.json`如下：
+
 ```json
 {
   "github": {
@@ -206,7 +208,7 @@ pnpm install @release-it/conventional-changelog -D
 }
 ```
 
-到`github`上查看，`CHANGELOG.md`文件和`release信息`都生成了
+然后运行`pnpm run release`，一路回车即可，然后到`github`上查看，`CHANGELOG.md`文件和`release信息`都生成了
 
 release信息：
 
