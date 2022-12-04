@@ -17,6 +17,7 @@
     "@release-it/conventional-changelog": "^5.1.1",
     "commitizen": "^4.2.5",
     "commitlint-config-git-commit-emoji": "^1.0.0",
+    "conventional-changelog-gitmoji-config": "^1.4.4",
     "cz-conventional-changelog": "3.3.0",
     "husky": "^8.0.2",
     "release-it": "^15.5.1"
