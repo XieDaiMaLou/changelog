@@ -170,6 +170,14 @@ pnpm install @release-it/conventional-changelog -D
 我们可以使用`angular`默认的`changelog`生成规范
 - `ignoreRecommendedBump`：我们想在自动生成版本的时候，自己来选择生成，可以配置为`true`
 - `strictSemVer`：发布的版本号必须是`strict-semver`的版本号
+
+⚠️(一定要加)：插件会自动生成`tag`，我们需要自定义一下生成`tag`时的提交信息。在配置项中加入下面的配置，来完成提交信息的自定义
+```json
+  "git": {
+    "commitMessage": "release: v${version}"
+  },
+```
+
 更多配置参考[这里](https://github.com/release-it/conventional-changelog)
 
 ```json
@@ -187,6 +195,9 @@ pnpm install @release-it/conventional-changelog -D
       "ignoreRecommendedBump": true,
       "strictSemVer": true
     }
+  },
+  "git": {
+    "commitMessage": "release: v${version}"
   }
 }
 ```

@@ -12,5 +12,8 @@
       "ignoreRecommendedBump": true,
       "strictSemVer": true
     }
+  },
+  "git": {
+    "commitMessage": "release: v${version}"
   }
 }
