@@ -1,5 +1,9 @@
 
 
+## <small>1.0.7 (2022-12-04)</small>
+
+* fix: bug fix ([96b83f8](https://github.com/XieDaiMaLou/changelog/commit/96b83f8))
+
 ## <small>1.0.6 (2022-12-04)</small>
 
 * fix: change code ([d886d33](https://github.com/XieDaiMaLou/changelog/commit/d886d33))
