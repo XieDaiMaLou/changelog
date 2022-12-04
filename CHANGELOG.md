@@ -1,5 +1,10 @@
 
 
+## <small>1.0.6 (2022-12-04)</small>
+
+* fix: change code ([d886d33](https://github.com/XieDaiMaLou/changelog/commit/d886d33))
+* style: change code style ([44683fa](https://github.com/XieDaiMaLou/changelog/commit/44683fa))
+
 ## <small>1.0.5 (2022-12-04)</small>
 
 * chore: change md file ([0c366de](https://github.com/XieDaiMaLou/changelog/commit/0c366de))
