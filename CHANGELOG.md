@@ -1,5 +1,9 @@
 
 
+## <small>1.0.4 (2022-12-04)</small>
+
+* docs: update doc test ([ec12e31](https://github.com/XieDaiMaLou/changelog/commit/ec12e31))
+
 ## <small>1.0.3 (2022-12-04)</small>
 
 * feat: add more commit show ([dbac34f](https://github.com/XieDaiMaLou/changelog/commit/dbac34f))
