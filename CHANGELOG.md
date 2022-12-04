@@ -1,5 +1,9 @@
 
 
+## <small>1.0.5 (2022-12-04)</small>
+
+* chore: change md file ([0c366de](https://github.com/XieDaiMaLou/changelog/commit/0c366de))
+
 ## <small>1.0.4 (2022-12-04)</small>
 
 * docs: update doc test ([ec12e31](https://github.com/XieDaiMaLou/changelog/commit/ec12e31))
