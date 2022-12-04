@@ -7,7 +7,7 @@ pnpm init
 ```
 ## 安装`commitizen` 
 
-我们在提交代码输入`commit`信息时，使用`commitizen`, `commitizen`会询问一些问题，它会根据开发者的回答来生成符合`Conventional Commits`标准的提交信息。
+我们在提交代码输入`commit`信息时，使用`commitizen`来检测提交的`commit`, `commitizen`会询问一些问题，它会根据开发者的回答来生成符合`Conventional Commits`标准的提交信息。
 
 - 安装`commitizen`
 ```shell
@@ -42,6 +42,7 @@ pnpm add -D -E cz-conventional-changelog
 ```
 - 测试生成`commit`
 ```shell
+ga .
 pnpm run commit
 ```
 1、选择此次提交的代码功能类型
@@ -136,6 +137,7 @@ npx husky add .husky/commit-msg 'npx --no-install commitlint --edit "$1"'
 ## 使用`release-it`自动生成`变更日志`
 
 - 安装`release-it`
+
 如果是`npm`直接运行`npm init release-it`
 ```shell
 npm init release-it
@@ -147,8 +149,10 @@ npm init release-it
 pnpm install release-it -D
 ```
 2、生成`release-it`配置
-一种方式是手动创建`.release-it.json文件
-或者执行`pnpm create release-it`命令(目前会报错)，但也会生成`.release-it.json`文件
+
+方法一：手动创建`.release-it.json文件`
+
+方法二：执行`pnpm create release-it`命令(目前会报错)，但也会生成`.release-it.json`文件
 
 目前项目不需要在`npm`进行发布，因此需要在`.release-it.json`中添加下面的配置，禁用npm发布：
 ```json
@@ -201,3 +205,13 @@ pnpm install @release-it/conventional-changelog -D
   }
 }
 ```
+
+到`github`上查看，`CHANGELOG.md`文件和`release信息`都生成了
+
+release信息：
+
+![release信息](./images/release.png)
+
+`CHANGELOG.md`如下
+
+![CHANGELOG.md](./images/changelog.png)
