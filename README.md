@@ -290,4 +290,9 @@ release信息：
     }
   }
 ```
-修改后就可以去测试啦
+修改后就可以去测试啦，效果如下
+
+![release_res_1](./images/release_res_1.png)
+
+![release_res_1](./images/release_res_1.png)
+
