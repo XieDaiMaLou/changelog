@@ -28,6 +28,22 @@
             "type": "chore",
             "section": "🔧构建/工程依赖/工具"
           },
+          {
+            "type": "docs",
+            "section": "📚文档"
+          },
+          {
+            "type": "style",
+            "section": "💄代码的样式美化"
+          },
+          {
+            "type": "refactor",
+            "section": "♻️重构"
+          },
+          {
+            "type": "perf",
+            "section": "⚡️性能优化"
+          },
         ]
       }
       "presets": {
