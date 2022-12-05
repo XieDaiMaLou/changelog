@@ -1,5 +1,27 @@
 
 
+## [1.0.10](https://github.com/XieDaiMaLou/changelog/compare/1.0.9...1.0.10) (2022-12-05)
+
+
+### ✨新功能
+
+* custom release-it config ([74c84fc](https://github.com/XieDaiMaLou/changelog/commit/74c84fc94d32fc5f3c741d36a86a5ca4fe1421ee))
+
+
+### 🔧构建/工程依赖/工具
+
+* add chore type ([1e09fd8](https://github.com/XieDaiMaLou/changelog/commit/1e09fd8e7c77252c0947d5144c974398af3b2d8b))
+
+
+### 📚文档
+
+* add docs ([118947f](https://github.com/XieDaiMaLou/changelog/commit/118947fae0499ad80da1f62bad953f2a0fc6400c))
+
+
+### 💄代码的样式美化
+
+* change code style ([7a816fe](https://github.com/XieDaiMaLou/changelog/commit/7a816fe0cdddd61b648a3dc4b3d6e98c917e1aa1))
+
 ## <small>1.0.9 (2022-12-04)</small>
 
 * chore: remove unless package ([d848c3c](https://github.com/XieDaiMaLou/changelog/commit/d848c3c))
