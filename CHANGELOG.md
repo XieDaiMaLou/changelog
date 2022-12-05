@@ -1,5 +1,12 @@
 
 
+## [1.0.14](https://github.com/XieDaiMaLou/changelog/compare/1.0.13...1.0.14) (2022-12-05)
+
+
+### ✨ 新功能
+
+* add result image ([16e6fd2](https://github.com/XieDaiMaLou/changelog/commit/16e6fd24c634b50f3cce3b3c392ab6c8fc182f6a))
+
 ## [1.0.13](https://github.com/XieDaiMaLou/changelog/compare/1.0.12...1.0.13) (2022-12-05)
 
 
