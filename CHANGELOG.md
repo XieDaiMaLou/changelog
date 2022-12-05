@@ -1,5 +1,17 @@
 
 
+## [1.0.12](https://github.com/XieDaiMaLou/changelog/compare/1.0.11...1.0.12) (2022-12-05)
+
+
+### ✨新功能
+
+* add fun ([0e87d4f](https://github.com/XieDaiMaLou/changelog/commit/0e87d4f442508785e23f01af31dedc83d586d126))
+
+
+### 💄代码的样式美化
+
+* change index.js style ([8805a68](https://github.com/XieDaiMaLou/changelog/commit/8805a68b8c13b735428b2676769380890ebcaa73))
+
 ## [1.0.11](https://github.com/XieDaiMaLou/changelog/compare/1.0.10...1.0.11) (2022-12-05)
 
 
