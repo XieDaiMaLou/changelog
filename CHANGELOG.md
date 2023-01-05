@@ -1,5 +1,12 @@
 
 
+## [1.0.15](https://github.com/XieDaiMaLou/changelog/compare/1.0.14...1.0.15) (2023-01-05)
+
+
+### 🔧 构建/工程依赖/工具
+
+* change index.js ([6e37961](https://github.com/XieDaiMaLou/changelog/commit/6e37961b31f6aa87b403125dd2cb6e5d45ef9749))
+
 ## [1.0.14](https://github.com/XieDaiMaLou/changelog/compare/1.0.13...1.0.14) (2022-12-05)
 
 
