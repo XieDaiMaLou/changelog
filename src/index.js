@@ -5,3 +5,4 @@ const delay = ms => new Promise((resolve, reject) => {
     resolve();
   }, ms)
 });
+console.log('end')
